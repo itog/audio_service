@@ -296,7 +296,7 @@ class AudioPlayerTask extends BackgroundAudioTask {
         case AudioPlaybackState.connecting:
           return _skipState ?? BasicPlaybackState.connecting;
         case AudioPlaybackState.completed:
-          return BasicPlaybackState.stopped;
+          return BasicPlaybackState.completed;
         default:
           throw Exception("Illegal state");
       }

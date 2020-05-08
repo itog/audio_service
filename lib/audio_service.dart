@@ -41,6 +41,7 @@ enum MediaAction {
 /// The different states during audio playback.
 enum BasicPlaybackState {
   none,
+  completed,
   stopped,
   paused,
   playing,
